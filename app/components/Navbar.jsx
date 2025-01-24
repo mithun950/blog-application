@@ -8,7 +8,7 @@ const Navbar = async() => {
     const user = await getUser();
     console.log("paice",user)
   return (
-    <nav className="flex justify-between items-center bg-[#258d6e] p-6 sticky">
+    <nav className="flex justify-between items-center bg-orange-500 p-6 sticky">
       <ul className="flex gap-4">
         <li>
           <Link href="/" className="text-lg text-white">
@@ -33,7 +33,7 @@ const Navbar = async() => {
         ) : (
           <Link
             href="/api/auth/login"
-            className="bg-[#258d6e] text-white px-4 py-2 rounded-md text-sm hover:bg-[#104132] transition duration-300"
+            className="bg-orange-500 text-white px-4 py-2 rounded-md text-sm hover:bg-[#104132] transition duration-300"
           >
             Login
           </Link>
