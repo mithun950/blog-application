@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 export default function DetailsPage({ params }) {
-  const { id } = params; // Dynamic route থেকে ID পাওয়া
+  const { id } = params; 
   const [post, setPost] = useState(null);
   const [loading, setLoading] = useState(true);
   const router = useRouter();
