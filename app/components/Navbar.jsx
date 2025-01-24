@@ -17,7 +17,7 @@ const Navbar = async() => {
         </li>
         <li>
           <Link href="/profile" className="text-lg text-white">
-            Profile
+           My Profile
           </Link>
         </li>
       </ul>
