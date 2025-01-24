@@ -18,13 +18,15 @@ const Footer = () => {
               </p>
             </div>
 
-            {/* Navigation Links */}
+            
             <div className="flex flex-wrap justify-center md:justify-end gap-4">
               <a href="#" className="text-gray-400 hover:text-white transition">
-                About Us
+                About 
+
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition">
-                Contact
+                Contact us
+                
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition">
                 Privacy Policy
