@@ -53,7 +53,7 @@ export default function DetailsPage({ params }) {
         <p className="text-gray-700 leading-7">{post.body}</p>
         <button
           onClick={() => router.back()}
-          className="mt-6 bg-[#258d6e] text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-[#1f7359] transition duration-300"
+          className="mt-6 bg-orange-500 text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-[#1f7359] transition duration-300"
         >
           Go Back
         </button>
