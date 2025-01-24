@@ -1,15 +1,22 @@
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
+import { redirect } from "next/navigation";
+
 import React from "react";
 
 export default async function ProfilePage() {
-  const { getUser } = getKindeServerSession();
+  const { isAuthenticated, getUser } = getKindeServerSession();
+  const auth = await isAuthenticated();
   const user = await getUser();
+
+  if(!auth){
+    return redirect('/api/auth/login');
+  }
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 py-6">
       {user ? (
         <div className="bg-white shadow-md rounded-md p-6 w-96 text-center">
-          <image
+          <img
             src={user.picture}
             alt="Profile Picture"
             className="w-24 h-24 rounded-full mx-auto mb-4"
